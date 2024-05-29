@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-50px) scale(6);
+}
+.foreground{
+    transform: translateZ(-25px) scale(3);
+    /* bottom:-600px; */
+}
+.foreground, .background{
+    position:absolute;
+    z-index:-1;
+    object-fit: cover;
+    height:100%;
+    width: 100%;
+}
+h1{
+    position:absolute;
+    top:5rem;
+    color:white;
+    font-size:10rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+section{
+    position:relative;
+    color:white;
+    background-color: black;
+    padding:5rem 0rem;
+}
+.bg1{
+    background-image: url(nature.jpg);
+}
+.bg2{
+    background-image: url(parachuting.jpg);
+}
+.bg3{
+    background-image: url(paragliding.jpg);
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position:relative;
+    width: 100%;
+    background-attachment: fixed;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.desc{
+    font-size: 40px;
+
+}
